@@ -1,0 +1,86 @@
+/* Estructura base con flexbox para fijar el footer abajo */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background: url("../assets/images/Persona\ 3\ Reload\ Artbook_page-0001.jpg")
+    center center no-repeat fixed;
+  background-size: cover; /* Puedes usar 'contain' si quieres que no se recorte */
+  color: #333;
+}
+
+/* Navegación superior: ocupa todo el ancho */
+nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 20px 0;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Logo de navegación */
+.nav-wrapper .brand-logo {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+/* Contenido principal centrado */
+main {
+  flex: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer fijo al fondo incluso con poco contenido */
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 20px 0;
+}
+
+/* Títulos */
+h4 {
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+/* Cards */
+.card .card-content p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Padding en secciones */
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: none;
+}
+
+/* Espacio personalizado arriba o abajo */
+.custom-card-top {
+  margin-top: 40px;
+}
+
+.custom-card-bottom {
+  margin-bottom: 60px;
+}
+
+/* Tamaños personalizados opcionales */
+.card.small {
+  height: 180px;
+  overflow-y: auto;
+}
+
+.card.large {
+  min-height: 300px;
+}
