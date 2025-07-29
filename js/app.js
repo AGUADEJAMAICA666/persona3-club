@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
       mensaje.textContent = "Sesión iniciada correctamente.";
     });
 
-  // Función para mostrar solo una sección
+  // mostrar solo una sección
   function mostrarSeccion(id) {
-    // Oculta todas las secciones si es necesario
+    // Ocultar Secciones
     if (contenido) contenido.style.display = "none";
     if (login) login.style.display = "none";
 
-    // Muestra solo la sección deseada
+    // Muestra Sección deseada
     const target = document.getElementById(id);
     if (target) {
       target.style.display = "block";
